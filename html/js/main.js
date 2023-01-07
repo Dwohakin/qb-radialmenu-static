@@ -16,12 +16,6 @@ $(document).ready(function(){
                     QBRadialMenu.close(true);
                 }
                 if (toggleConfig === false){
-                     $(document).on('keyup', function(e) {
-                         if(e.key == keybindConfig | e.key === keybindConfig.toLowerCase()){
-                             QBRadialMenu.close();
-                         }
-                     });
-                 } else {
                     $(document).on('keydown', function(e) {
                         switch(e.key) {
                             case keybindConfig:
